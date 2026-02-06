@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prerona 💌</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 70px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 520px;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  margin: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background: #aaa;
+  position: relative;
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Hey Prerona 💖</h1>
+  <p class="subtitle">
+    If this was an ENHYPEN album,<br>
+    you’d be my <b>title track</b>.
+  </p>
+
+  <div class="card">
+    <h2>Enhypen-coded facts 🖤</h2>
+    <p>✨ You bias-wrecked my whole life (Heeseung who? 😌)</p>
+    <p>🎧 No skips. Just like you</p>
+    <p>🖤 Cute like Sunoo, cool like Jay,<br>
+       but honestly… you’re just <b>Prerona</b></p>
+  </div>
+
+  <div class="card">
+    <h2>Important question 🌹</h2>
+    <p>
+      Prerona aka <b>Boliya</b> 💕<br>
+      Will you be my Valentine?
+    </p>
+
+    <button onclick="yesClick()">YES 💘</button>
+    <button id="noBtn" onmouseover="moveBtn()">NO 🙄</button>
+  </div>
+
+  <div class="footer">
+    Made with 💕 just for you
+  </div>
+</div>
+
+<script>
+function yesClick() {
+  alert("CONGRATS BOLIYA 😘💖\nValentine’s Day is officially ours 🫶");
+}
+
+function moveBtn() {
+  const btn = document.getElementById("noBtn");
+  btn.style.left = Math.random() * 200 - 100 + "px";
+  btn.style.top = Math.random() * 200 - 100 + "px";
+}
+</script>
+
+</body>
+</html>
